@@ -1,0 +1,534 @@
+{
+	"info": {
+		"_postman_id": "7844e2d6-50e9-4e79-9da5-d58a3f3487ed",
+		"name": "fatmug Designs",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "26005172"
+	},
+	"item": [
+		{
+			"name": "Create Vendor",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzAxNzU0Njc4LCJpYXQiOjE3MDE2NjgyNzgsImp0aSI6IjVjZWQ5YjBiOWE1ZjQxM2VhYzlhNDcyZmYzM2FjMmY0IiwidXNlcl9pZCI6Mn0.2mwAJxZ6kD_aijC1DVSPXZbONz1i1IZrjYb28qdTiVw",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "Krishna Kant Singhal",
+							"type": "text"
+						},
+						{
+							"key": "contact_details",
+							"value": "krishna03singhal@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "address",
+							"value": "Jaipur, Rajasthan",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:8000/api/vendors/",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"vendors",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "List of all Vendors",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzAxNzU0Njc4LCJpYXQiOjE3MDE2NjgyNzgsImp0aSI6IjVjZWQ5YjBiOWE1ZjQxM2VhYzlhNDcyZmYzM2FjMmY0IiwidXNlcl9pZCI6Mn0.2mwAJxZ6kD_aijC1DVSPXZbONz1i1IZrjYb28qdTiVw",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8000/api/vendors/",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"vendors",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Single Vendor Details",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzAxNzU0Njc4LCJpYXQiOjE3MDE2NjgyNzgsImp0aSI6IjVjZWQ5YjBiOWE1ZjQxM2VhYzlhNDcyZmYzM2FjMmY0IiwidXNlcl9pZCI6Mn0.2mwAJxZ6kD_aijC1DVSPXZbONz1i1IZrjYb28qdTiVw",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8000/api/vendors/1",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"vendors",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Vendor Details",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzAxNzU0Njc4LCJpYXQiOjE3MDE2NjgyNzgsImp0aSI6IjVjZWQ5YjBiOWE1ZjQxM2VhYzlhNDcyZmYzM2FjMmY0IiwidXNlcl9pZCI6Mn0.2mwAJxZ6kD_aijC1DVSPXZbONz1i1IZrjYb28qdTiVw",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "Krishna Kant",
+							"type": "text"
+						},
+						{
+							"key": "contact_details",
+							"value": "krishnak@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "address",
+							"value": "Gangapur City, Rajasthan",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:8000/api/vendors/1/",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"vendors",
+						"1",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Vendor",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzAxNzU0Njc4LCJpYXQiOjE3MDE2NjgyNzgsImp0aSI6IjVjZWQ5YjBiOWE1ZjQxM2VhYzlhNDcyZmYzM2FjMmY0IiwidXNlcl9pZCI6Mn0.2mwAJxZ6kD_aijC1DVSPXZbONz1i1IZrjYb28qdTiVw",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:8000/api/vendors/7/",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"vendors",
+						"7",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Purchase Order",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzAxNzU0Njc4LCJpYXQiOjE3MDE2NjgyNzgsImp0aSI6IjVjZWQ5YjBiOWE1ZjQxM2VhYzlhNDcyZmYzM2FjMmY0IiwidXNlcl9pZCI6Mn0.2mwAJxZ6kD_aijC1DVSPXZbONz1i1IZrjYb28qdTiVw",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"vendor\": 5,\n    \"delivery_date\": \"2023-11-17T15:30:00Z\",\n    \"order_date\": \"2023-11-30T00:30:00Z\",\n    \"items\": \n    [\n        {\n        \"name\": \"Item 1\",\n        \"quantity\": 3\n        },\n        {\n        \"name\": \"Item 2\",\n        \"quantity\": 5\n        },\n        {\n        \"name\": \"Item 3\",\n        \"quantity\": 2\n        }\n    ],\n    \"quality_rating\": 7,\n    \"status\": \"complete\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8000/api/purchase_orders/",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"purchase_orders",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "List Purchase Orders",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzAxNzU0Njc4LCJpYXQiOjE3MDE2NjgyNzgsImp0aSI6IjVjZWQ5YjBiOWE1ZjQxM2VhYzlhNDcyZmYzM2FjMmY0IiwidXNlcl9pZCI6Mn0.2mwAJxZ6kD_aijC1DVSPXZbONz1i1IZrjYb28qdTiVw",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8000/api/purchase_orders",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"purchase_orders"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "List Purchase Orders for a Vendor",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzAxNzU0Njc4LCJpYXQiOjE3MDE2NjgyNzgsImp0aSI6IjVjZWQ5YjBiOWE1ZjQxM2VhYzlhNDcyZmYzM2FjMmY0IiwidXNlcl9pZCI6Mn0.2mwAJxZ6kD_aijC1DVSPXZbONz1i1IZrjYb28qdTiVw",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8000/api/purchase_orders/?vendor_id=1",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"purchase_orders",
+						""
+					],
+					"query": [
+						{
+							"key": "vendor_id",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Retrieve Purchase Order details for a particular purchase_id",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzAxNzU0Njc4LCJpYXQiOjE3MDE2NjgyNzgsImp0aSI6IjVjZWQ5YjBiOWE1ZjQxM2VhYzlhNDcyZmYzM2FjMmY0IiwidXNlcl9pZCI6Mn0.2mwAJxZ6kD_aijC1DVSPXZbONz1i1IZrjYb28qdTiVw",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8000/api/purchase_orders/6",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"purchase_orders",
+						"6"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Purchase Order",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzAxNzU0Njc4LCJpYXQiOjE3MDE2NjgyNzgsImp0aSI6IjVjZWQ5YjBiOWE1ZjQxM2VhYzlhNDcyZmYzM2FjMmY0IiwidXNlcl9pZCI6Mn0.2mwAJxZ6kD_aijC1DVSPXZbONz1i1IZrjYb28qdTiVw",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"quality_rating\": 6,\n    \"status\": \"pending\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8000/api/purchase_orders/5/",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"purchase_orders",
+						"5",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Purchase Order Delete",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzAxNzU0Njc4LCJpYXQiOjE3MDE2NjgyNzgsImp0aSI6IjVjZWQ5YjBiOWE1ZjQxM2VhYzlhNDcyZmYzM2FjMmY0IiwidXNlcl9pZCI6Mn0.2mwAJxZ6kD_aijC1DVSPXZbONz1i1IZrjYb28qdTiVw",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:8000/api/purchase_orders/5/",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"purchase_orders",
+						"5",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Performance Metrics",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzAxNzU0Njc4LCJpYXQiOjE3MDE2NjgyNzgsImp0aSI6IjVjZWQ5YjBiOWE1ZjQxM2VhYzlhNDcyZmYzM2FjMmY0IiwidXNlcl9pZCI6Mn0.2mwAJxZ6kD_aijC1DVSPXZbONz1i1IZrjYb28qdTiVw",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8000/api/vendors/1/performance",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"vendors",
+						"1",
+						"performance"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Acknowledgement",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzAxNzU0Njc4LCJpYXQiOjE3MDE2NjgyNzgsImp0aSI6IjVjZWQ5YjBiOWE1ZjQxM2VhYzlhNDcyZmYzM2FjMmY0IiwidXNlcl9pZCI6Mn0.2mwAJxZ6kD_aijC1DVSPXZbONz1i1IZrjYb28qdTiVw",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "localhost:8000/api/purchase_orders/4/acknowledge",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"purchase_orders",
+						"4",
+						"acknowledge"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Admin Tokens",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "username",
+							"value": "admin",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "admin",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:8000/api/admin-tokens/",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"admin-tokens",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Admin Refresh Token",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "refresh",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTcwMTg0MTA3OCwiaWF0IjoxNzAxNjY4Mjc4LCJqdGkiOiIzMWJiMTcwZjUzNmU0MDVjOTFmN2MzYjNlNjgzZGUyZiIsInVzZXJfaWQiOjJ9.Y6VLysViRI_VZJdtXmHe6oyWTlq1ZhZemhJAf-ZxxA4",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:8000/api/admin_refresh_token/",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"admin_refresh_token",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
